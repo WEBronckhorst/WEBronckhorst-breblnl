@@ -1,0 +1,86 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@layer base {
+    h1 {
+        @apply text-2xl font-bold font-interstate text-blauw;
+    }
+    h2 {
+        @apply text-[18px] font-bold font-interstate text-blauw;
+    }
+    h3 {
+        @apply text-[16px] font-bold font-interstate;
+    }
+    a {
+        @apply   no-underline text-blauw;
+    }
+    a:hover {
+        @apply   underline text-blauw;
+    }
+    strong, b {
+        @apply font-bold;
+    }
+    /* ... */
+}
+
+@layer components {
+    .select2-dropdown {
+      @apply rounded-b-lg shadow-md;
+    }
+    .select2-search {
+      @apply border border-gray-300 rounded;
+    }
+    .select2-results__group {
+      @apply text-lg font-bold text-gray-900;
+    }
+
+    .bt-blauw {
+        @apply px-6 py-4 mb-3 text-sm font-semibold text-white rounded-md font-interstate-condensed bg-blauw;
+    }
+    .bt-blauw:hover {
+        @apply bg-blauw-hover;
+    }
+    .mark_licht{
+        @apply  items-center px-3 py-1 mb-1 text-sm font-medium font-bold no-underline transition-all border-2 border-solid rounded-md h-7 text-slate-400 border-slate-300 bg-slate-100;
+    }
+    .mark_licht:hover{
+        @apply border-blauw bg-slate-200 text-blauw;
+    }
+    .mark_status_1{ /* open */
+        @apply  items-center px-3 py-1 mb-1 text-sm font-medium font-bold no-underline transition-all border-2 border-solid rounded-md h-7 bg-slate-50 border-blauw text-blauw;
+    }
+    .mark_status_1:hover{
+        @apply text-red-700 bg-red-300 border-red-900;
+    }
+    .mark_status_2{  /* in behandeling */
+        @apply  items-center px-3 py-1 mb-1 text-sm font-medium font-bold text-indigo-600 no-underline transition-all border-2 border-indigo-600 border-solid rounded-md h-7 bg-indigo-50;
+    }
+    .mark_status_2:hover{
+        @apply text-indigo-700 bg-indigo-300 border-indigo-900;
+    }
+    .mark_status_3{ /* Geimplementeerd */
+        @apply  items-center px-3 py-1 mb-1 text-sm font-medium font-bold no-underline transition-all border-2 border-solid rounded-md h-7 text-slate-600 border-slate-600 bg-slate-50;
+    }
+    .mark_status_3:hover{
+        @apply text-slate-700 bg-slate-300 border-slate-900;
+    }
+    .mark_status_4{
+        @apply  items-center px-3 py-1 mb-1 text-sm font-medium font-bold text-orange-500 no-underline transition-all border-2 border-orange-500 border-solid rounded-md h-7 bg-orange-50;
+    }
+    .mark_status_4:hover{ /* anuleerd */
+        @apply text-orange-700 bg-orange-300 border-orange-900;
+    }
+    .mark_status_5{ /* Afgerond */
+        @apply  items-center px-3 py-1 mb-1 text-sm font-medium font-bold text-green-600 no-underline transition-all border-2 border-green-600 border-solid rounded-md h-7 bg-green-50;
+    }
+    .mark_status_5:hover{
+        @apply text-green-700 bg-green-300 border-green-900;
+    }
+    /* ... */
+  }
+
+  .ck-editor__editable {
+    min-height: 200px !important;
+}

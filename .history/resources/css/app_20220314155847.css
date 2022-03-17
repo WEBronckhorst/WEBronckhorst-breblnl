@@ -1,0 +1,76 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@layer base {
+    h1 {
+        @apply text-2xl font-bold font-interstate text-blauw;
+    }
+    h2 {
+        @apply text-[18px] font-bold font-interstate text-blauw;
+    }
+    h3 {
+        @apply text-[16px] font-bold font-interstate;
+    }
+    a {
+        @apply   no-underline text-blauw;
+    }
+    a:hover {
+        @apply   underline text-blauw;
+    }
+    strong, b {
+        @apply font-bold;
+    }
+    /* ... */
+}
+
+@layer components {
+    .select2-dropdown {
+      @apply rounded-b-lg shadow-md;
+    }
+    .select2-search {
+      @apply border border-gray-300 rounded;
+    }
+    .select2-results__group {
+      @apply text-lg font-bold text-gray-900;
+    }
+
+    .bt-blauw {
+        @apply px-6 py-4 mb-3 text-sm font-semibold text-white rounded-md font-interstate-condensed bg-blauw;
+    }
+    .bt-blauw:hover {
+        @apply bg-blauw-hover;
+    }
+    .mark_licht{
+        @apply inline-flex items-center px-3 mb-1 text-sm font-medium font-bold no-underline transition-all border-2 border-solid text-slate-400 border-slate-300 bg-slate-100;
+    }
+    .mark_licht:hover{
+        @apply border-blauw bg-slate-200 text-blauw;
+    }
+    .mark_status_1{ /* open */
+        @apply inline-flex items-center px-3 mb-1 text-sm font-medium font-bold text-red-400 no-underline transition-all bg-red-100 border-2 border-red-300 border-solid;
+    }
+    .mark_status_1:hover{
+        @apply text-red-700 bg-red-300 border-red-900;
+    }
+    .mark_status_2{  /* in behandeling */
+        @apply inline-flex items-center px-3 mb-1 text-sm font-medium font-bold text-indigo-400 no-underline transition-all bg-indigo-100 border-2 border-indigo-300 border-solid;
+    }
+    .mark_status_2:hover{
+        @apply text-indigo-700 bg-indigo-300 border-indigo-900;
+    }
+    .mark_status_3{ /* Afgerond */
+        @apply inline-flex items-center px-3 mb-1 text-sm font-medium font-bold text-green-600 no-underline transition-all bg-green-100 border-2 border-green-600 border-solid;
+    }
+    .mark_status_3:hover{
+        @apply text-green-700 bg-green-300 border-green-900;
+    }
+    .mark_status_4{
+        @apply inline-flex items-center px-3 mb-1 text-sm font-medium font-bold text-orange-400 no-underline transition-all bg-orange-100 border-2 border-orange-300 border-solid;
+    }
+    .mark_status_4:hover{ /* anuleerd */
+        @apply text-orange-700 bg-orange-300 border-orange-900;
+    }
+    /* ... */
+  }

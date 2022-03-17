@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@layer base {
+    h1 {
+        @apply text-2xl font-bold font-interstate text-blauw;
+    }
+    h2 {
+        @apply text-[18px] font-bold font-interstate text-blauw;
+    }
+    h3 {
+        @apply text-[16px] font-bold font-interstate;
+    }
+    a {
+        @apply   no-underline text-blauw;
+    }
+    a:hover {
+        @apply   underline text-blauw;
+    }
+    strong, b {
+        @apply font-bold;
+    }
+    /* ... */
+}
+
+@layer components {
+    .select2-dropdown {
+      @apply rounded-b-lg shadow-md;
+    }
+    .select2-search {
+      @apply border border-gray-300 rounded;
+    }
+    .select2-results__group {
+      @apply text-lg font-bold text-gray-900;
+    }
+
+    .bt-blauw {
+        @apply px-6 py-4 mb-3 text-sm font-semibold text-white rounded-md font-interstate-condensed bg-blauw;
+    }
+    .bt-blauw:hover {
+        @apply bg-blauw-hover;
+    }
+    .mark_licht{
+
+        @apply inline-flex items-center px-3 mb-1 font-medium no-underline transition-all border border-solid border-slate-500 bg-slate-200;
+    }
+    .mark_licht:hover{
+        @apply border-Blauw bg-slate-200;
+    }
+    /* ... */
+  }

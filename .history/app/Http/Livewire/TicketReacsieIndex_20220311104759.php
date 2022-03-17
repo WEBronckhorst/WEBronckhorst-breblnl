@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Livewire;
+
+use App\Models\Reactie;
+use Livewire\Component;
+
+class TicketReacsieIndex extends Component
+{
+    public $ticket;
+    public $reacsies;
+
+    public function mound($reacies)
+    {
+
+        dump($this->reacsies = Reactie::WHERE('ticket_id', 514)->get());
+
+    }
+
+
+    public function render()
+    {dump($this->reacsies);
+        return view('livewire.ticket-reacsie-index');
+    }
+}
